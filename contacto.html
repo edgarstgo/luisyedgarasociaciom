@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto</title>
+	<meta charset="utf-8">
+	<meta name="viewport"  content="width=device-widht,  initial-scale=1,  shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- DIV CON EL FONDO DE PANTALLA -->	
+<div class="view" style="background-image: url(prac/Nueva_carpeta/madera.jpg); background-size: 100% 100%; background-position: center;">
+<!-- DIV CON EL TITULO -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12" style="text-align: center;">
+			<h1 style="font-family: algerian; padding-top: .1em; padding-bottom: .1em; font-size: 5em; color: white;">Luis Y Edgar Asociados</h1>
+		</div>
+	</div>
+<!-- BARRA DE NAVEGACION-->
+	<div class="row">
+		<nav class="navbar navbar-default " role="navigation"
+		style="border:0px; border-radius: 0px; background:none ">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle btn btn-default active" data-toggle="collapse" data-target="#miBarra">
+				     <span class="icon-bar"></span>
+				     <span class="icon-bar"></span>
+				     <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="contacto.html"style="font-size: 1.7em; color: white;">Formulario</a>
+			</div>
+			<div class="collapse navbar-collapse" style="font-size: 1.7em;" id="miBarra">
+				<ul class="nav navbar-nav" style="  color: white;">
+					<li class="nav-item"><a class="nav-link" href="index.html" style="color: black;">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="practicas.html" style="color: black;">Practicas</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color: black;">Contacto<b class="caret"></b></a>
+						<ul class="dropdown-menu" style="font-size: .8em;">
+							<li><a class="dropdown-item" href="quienes.html"style="color: black;">Quienes Somos</a></li>
+							<li><a class="dropdown-item" href="redes.html"style="color: black;">Redes Sociales</a></li>
+							<!-- <li><a class="dropdown-item" href="contacto.html"style="color: black;">Formulario</a></li> -->
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="mapa.html" style="color: black;">Mapa</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+<!-- FORMULARIO -->
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<div class="card">
+				<style>
+					.card{
+						margin-top: 2em; 
+						padding-top: 2em;
+						padding-right: 2em;
+						padding-left: 2em;
+						padding-bottom: 2em; 
+						background-color: rgba(245, 245, 245, 0.4);
+						color: black;
+						text-align: center;
+					}	
+				</style>
+				<div class="card-body">
+					<h4 class="well-title">SI DESEA SABER MÁS SOBRE NOSOTROS PUEDE CONTACTARNOS MEDIANTE NUESTRAS REDES SOCIALES</h4>
+				</div>
+				<div class="card-body">
+					<h4 class="well-title">O BIEN PUDE LLENAR EL SIGUIENTE FORMULARIO Y NOSOSTROS NOS CONTACTAREMOS CON USTED</h4>
+				</div>
+				<form method="POST" action="contacto.php" >
+					<style >
+						label {
+						  display: block;
+						  padding-bottom: 4px;
+						  font-size: 1.25em;
+						}
+						input, select, textarea {
+						  border-radius: 2px;
+						  border: 1px solid #ccc;
+						  box-sizing: border-box;
+						  font-size: 1.25em;
+						  width: 500px;
+						  padding: 8px;
+						}
+						textarea {
+						  height: 250px;
+						}
+						button {
+							background-color: blue;
+							color:white;
+						}
+					</style>
+					<div class="elem-group">
+				    	<label for="nombre">Nombre</label>
+				    	<input type="text" id="nombre" name="nombre" placeholder="Introduce tu Nombre" pattern=[A-Z\sa-z]{3,20} required>
+				  	</div>
+				  	<div class="elem-group">
+				    	<label for="email">E-mail</label>
+				    	<input type="email" id="email" name="email" placeholder="Introduce tu e-mail"required>
+				  	</div>
+				  	<div class="elem-group">
+				    	<label for="opciones">Selecciona la opcion</label>
+				    	<select id="opciones" name="opciones" required>
+				    		<option value="">Selecciona una opcion</option>
+					        <option value="Practicas">Practicas</option>
+					        <option value="Redes Sociales">Redes Sociales</option>
+					        <option value="Ubicacion">Ubicacion</option>
+					        <option value="Informacion de los Autores">Informacion de los Autores</option>
+				    	</select>
+				  	</div>
+				  	<div class="elem-group">
+					    <label for="titulo">Razon de contacto</label>
+					    <input type="text" id="titulo" name="titulo" required placeholder="Ejemplo: necesito mas informacion sobre ustedes" pattern=[A-Za-z0-9\s]{8,60}>
+				  	</div>
+				  	<div class="elem-group">
+					    <label for="mensaje">Escribe tu Mensaje</label>
+					    <textarea id="mensaje" name="mensaje" placeholder="informacion adicional sobre lo que desea saber en especifico" required></textarea>
+				 	 </div>
+				  <button type="submit">Enviar mensaje</button>
+				</form>
+			</div>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+<!-- TERMINA EL FORMUALRIO -->
+</div>
+</div>
+</body>
+</html>
