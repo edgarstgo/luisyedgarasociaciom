@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto</title>
+	<meta charset="utf-8">
+	<meta name="viewport"  content="width=device-widht,  initial-scale=1,  shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- DIV CON EL FONDO DE PANTALLA -->	
+<div class="view" style="background-image: url(nuevo/Nueva_carpeta/madera.jpg); background-size: 100% 100%; background-position: center;">
+<!-- DIV CON EL TITULO -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12" style="text-align: center;">
+			<h1 style="font-family: algerian; padding-top:.1em; padding-bottom: .1em; font-size: 5em; color: white;">Luis Y Edgar Asociados</h1>
+		</div>
+	</div>
+<!-- BARRA DE NAVEGACION -->
+	<div class="row">
+		<nav class="navbar navbar-default " role="navigation"
+		style="border:0px; border-radius: 0px; background:none;">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle btn btn-default active" data-toggle="collapse" data-target="#miBarra">
+				     <span class="icon-bar"></span>
+				     <span class="icon-bar"></span>
+				     <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand active" href="index.html"style="font-size: 1.7em; color: white;">Inicio</a>
+			</div>
+			<div class="collapse navbar-collapse" style="font-size: 1.7em;" id="miBarra">
+				<ul class="nav navbar-nav" style="color: white;">
+					<!--<li class="nav-item"><a class="nav-link" href="index.html" style="color: black;">Inicio</a></li>-->
+					<li class="nav-item"><a class="nav-link" href="practicas.html" style="color: black;">Practicas</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color: black;">Contacto<b class="caret"></b></a>
+						<ul class="dropdown-menu" style="font-size: .8em;">
+							<li><a class="dropdown-item" href="quienes.html"style="color: black;">Quienes Somos</a></li>
+							<li><a class="dropdown-item" href="redes.html"style="color: black;">Redes Sociales</a></li>
+							<li><a class="dropdown-item" href="contacto.html"style="color: black;">Formulario</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="mapa.html" style="color: black;">Mapa</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+<!-- EMPIEZA EL CARRUSEL -->
+	<div class="row">
+		<style>
+		.carousel .item img{
+    		margin: 0 auto;
+		}
+		</style>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" style="margin-top: 1em;">
+    		<!-- indicador carrusel -->
+       	 	<ol class="carousel-indicators">
+            	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            	<li data-target="#myCarousel" data-slide-to="1"></li>
+            	<li data-target="#myCarousel" data-slide-to="2"></li>
+        	</ol>   
+        	<!-- imagenes carrusel -->
+        	<div class="carousel-inner">
+            	<div class="active item">
+                	<a href="puma.html"><img src="img_carrusel/puma.jpg" alt="puma"></a>
+            	</div>
+            	<div class="item">
+                	<a href="lobo.html"><img src="img_carrusel/lobo.jpg" alt="lobo"></a>
+            	</div>
+            	<div class="item">
+                	<a href="perro.html"><img src="img_carrusel/perro.jpg" alt="perro"></a>
+            	</div>
+        	</div>
+        	<!-- control carrusel -->
+        	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            	<span class="glyphicon glyphicon-chevron-left"></span>
+        	</a>
+        	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+            	<span class="glyphicon glyphicon-chevron-right"></span>
+        	</a>
+    		</div>
+    	</div>
+    	<div class="col-sm-1"></div>
+    </div>
+<!-- INICIAN LAS TARJETAS O CARDS -->
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<style>
+				.card{
+					margin-top: 2em; 
+					text-align: center;
+					padding-top: 2em;
+					padding-right: 2em;
+					padding-left: 2em;
+					padding-bottom: 2em; 
+					background-color: rgba(245, 245, 245, 0.4);
+					color: black;
+				}	
+			</style>
+			<div class="card">
+				<!-- titulo -->
+				<div class="card-body">
+					<h4 class="well-title">ANIMALES MARINOS</h4>
+					<h6 class="well-subtitle text-muted">09/03/19</h6>
+				</div>
+				<!-- Imagen -->
+				<img style="width: 100%;" src="img_cards/marinos.jpg" alt="marinos">
+				<!-- Texto -->
+				<div class="card-body">
+					<p class="well-text text-justify" style="padding-top: 1em;">Los animales marinos son todos aquellos animales que viven o pasan gran parte de su vida en el agua. Teniendo en cuenta que los océanos representan el 71% de la corteza de nuestro planeta, parece claro que son muchas las especies de animales marinos que existen aunque también son de los más afectados al respecto de la extinción debido sobretodo a la pesca.
+					</p>
+					<p class="card-text text-justify" style="padding-top: 1em;">
+					Los que no necesitan un 100 % del agua: Son los animales que dependen de la tierra firme para su reproducción, teniendo a sus crías en la orilla o en la costa..........
+					</p>
+					<a href="marinos.html" class="btn btn-primary">VER MÁS</a>
+				</div>
+			</div>
+				
+			<div class="card">
+				<!-- titulo -->
+				<div class="card-body">
+					<h4 class="card-title">ANIMALES AEREOS</h4>
+					<h6 class="card-subtitle text-muted">10/03/19</h6>
+				</div>
+				<!-- Imagen -->
+				<img style="width: 100%;" class="card-img" src="img_cards/aereos.jpg" alt="aereos">
+				<!-- Texto -->
+				<div class="card-body">
+					<p class="card-text text-justify" style="padding-top: 1em;">Los animales aéreos son aquellos que tienen la capacidad de volar o desplazarse por los aires con sus propias capacidades. Son animales aéreos principalmente las aves e insectos. Su reproducción es ovípara, o sea, mediante huevos. Las aves se alimentan de semillas, gusanos e insectos, aunque algunas aves son carroñeras (se alimentan de deshechos de otros animales muertos), como los buitres. Tanto aves como insectos necesitan de alas para poder volar. Las alas de las aves están hechas de plumas y, en cambio, las de los insectos están hechas de un material sedoso y transparente.......</p>
+					<a href="aereos.html" class="btn btn-primary">VER MÁS</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3"></div>
+	</div>
+<!--TERMINAN LAS TARJETAS O CARDS -->
+</div>
+</div>
+</body>
+</html>
