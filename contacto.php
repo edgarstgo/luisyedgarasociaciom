@@ -48,7 +48,7 @@ if($_POST) {
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $email_visita . "\r\n";
      
-    if(mail($recipient, $titulo_email, $mensaje_visita, $headers)) {
+    if(@mail($recipient, $titulo_email, $mensaje_visita, $headers)) {
         echo "<p> Gracias por contactarnos, $nombre_visita. Tratarremos de contactarnos con usted lo antes posible</p>";
     } else{
         echo '<p>Lo sentimos pero su mensaje no pudo ser enviado</p>';
