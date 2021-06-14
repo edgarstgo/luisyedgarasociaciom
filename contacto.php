@@ -8,8 +8,8 @@ if(isset($_POST['Enviar'])) {
         $titulo = $_POST['titulo'];
         $mensaje = $_POST['mensaje'];
         $email = $_POST['email'];
-        $header = "From: edgarsantiagohernandez@gmail.com;" . "\r\n";
-        $header.= "Reply-to: edgarsantiagohernandez@gmail.com" .
+        $header = "From: noreply@exmaple.com;" . "\r\n";
+        $header.= "Reply-to: noreply@example.com" .
         "\r\n";
         $header.= "X-Mailer: PHP/". phpversion();
 
