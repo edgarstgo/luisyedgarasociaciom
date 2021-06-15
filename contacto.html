@@ -91,15 +91,15 @@
 					</style>
 					<div class="elem-group">
 				    	<label for="nombre">Nombre</label>
-				    	<input type="text" id="nombre" name="nombre" placeholder="Introduce tu Nombre" pattern=[A-Z\sa-z]{3,20} required>
+				    	<input type="text" name="nombre" placeholder="Introduce tu Nombre" pattern=[A-Z\sa-z]{3,20} required>
 				  	</div>
 				  	<div class="elem-group">
 				    	<label for="email">E-mail</label>
-				    	<input type="email" id="email" name="email" placeholder="Introduce tu e-mail"required>
+				    	<input type="email" name="email" placeholder="Introduce tu e-mail"required>
 				  	</div>
 				  	<div class="elem-group">
 				    	<label for="opciones">Selecciona la opcion</label>
-				    	<select id="opciones" name="opciones" required>
+				    	<select name="opciones" required>
 				    		<option value="">Selecciona una opcion</option>
 					        <option value="Practicas">Practicas</option>
 					        <option value="Redes Sociales">Redes Sociales</option>
@@ -109,11 +109,11 @@
 				  	</div>
 				  	<div class="elem-group">
 					    <label for="titulo">Razon de contacto</label>
-					    <input type="text" id="titulo" name="titulo" required placeholder="Ejemplo: necesito mas informacion sobre ustedes" pattern=[A-Za-z0-9\s]{8,60}>
+					    <input type="text" name="titulo" required placeholder="Ejemplo: necesito mas informacion sobre ustedes" pattern=[A-Za-z0-9\s]{8,60}>
 				  	</div>
 				  	<div class="elem-group">
 					    <label for="mensaje">Escribe tu Mensaje</label>
-					    <textarea id="mensaje" name="mensaje" placeholder="informacion adicional sobre lo que desea saber en especifico" required></textarea>
+					    <textarea name="mensaje" placeholder="informacion adicional sobre lo que desea saber en especifico" required></textarea>
 				 	 </div>
 				  <input type="submit" name="Enviar"></input>
 				</form>
