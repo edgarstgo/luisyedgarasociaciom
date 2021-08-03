@@ -60,63 +60,17 @@
 						padding-left: 2em;
 						padding-bottom: 2em; 
 						background-color: rgba(245, 245, 245, 0.4);
-						color: black;
+						color: white;
 						text-align: center;
 					}	
 				</style>
 				<div class="card-body">
-					<h4 class="well-title">SI DESEA SABER MÁS SOBRE NOSOTROS PUEDE CONTACTARNOS MEDIANTE NUESTRAS REDES SOCIALES</h4>
+					<h4 class="well-title" style="	font-size: 50px;">SI DESEA SABER MÁS SOBRE NOSOTROS PUEDE CONTACTARNOS MEDIANTE NUESTRAS REDES SOCIALES O BIEN PUEDE CONTACTARNOS MEDIANTE WHATSAPP</h4>
 				</div>
+
 				<div class="card-body">
-					<h4 class="well-title">O BIEN PUDE LLENAR EL SIGUIENTE FORMULARIO Y NOSOSTROS NOS CONTACTAREMOS CON USTED</h4>
+					<a href="https://wa.me/525538907918/?text=Hola, me gustaría pedir más información sobre la pagina web" target="_blank"><img src="parcial2/icono.jpg"></a>
 				</div>
-				<form method="POST" action="contacto.php" >
-					<style >
-						label {
-						  display: block;
-						  padding-bottom: 4px;
-						  font-size: 1.25em;
-						}
-						input, select, textarea {
-						  border-radius: 2px;
-						  border: 1px solid #ccc;
-						  box-sizing: border-box;
-						  font-size: 1.25em;
-						  width: 80%;
-						  padding: 8px;
-						}
-						textarea {
-						  height: 350px;
-						}
-					</style>
-					<div class="elem-group card-body">
-				    	<label for="nombre">Nombre</label>
-				    	<input type="text" name="nombre" placeholder="Introduce tu Nombre" pattern=[A-Z\sa-z]{3,20} required>
-				  	</div>
-				  	<div class="elem-group card-body">
-				    	<label for="email">E-mail</label>
-				    	<input type="email" name="email" placeholder="Introduce tu e-mail"required>
-				  	</div>
-				  	<div class="elem-group card-body">
-				    	<label for="opciones">Selecciona la opcion</label>
-				    	<select name="opciones" required>
-				    		<option value="">Selecciona una opcion</option>
-					        <option value="Practicas">Practicas</option>
-					        <option value="Redes Sociales">Redes Sociales</option>
-					        <option value="Ubicacion">Ubicacion</option>
-					        <option value="Informacion de los Autores">Informacion de los Autores</option>
-				    	</select>
-				  	</div>
-				  	<div class="elem-group card-body">
-					    <label for="titulo">Razon de contacto</label>
-					    <input type="text" name="titulo" required placeholder="Ejemplo: necesito mas informacion sobre ustedes" pattern=[A-Za-z0-9\s]{8,60}>
-				  	</div>
-				  	<div class="elem-group card-body">
-					    <label for="mensaje">Escribe tu Mensaje</label>
-					    <textarea name="mensaje" placeholder="informacion adicional sobre lo que desea saber en especifico" required></textarea>
-				 	 </div>
-				  <input class="card-body" type="submit" name="Enviar"></input>
-				</form>
 			</div>
 		</div>
 		<div class="col-sm-1"></div>
